@@ -9,7 +9,14 @@
 import UIKit
 
 class QuizViewController: UIViewController {
-
+    
+    //properties
+    @IBOutlet weak var NameField: UITextField!
+    
+    func getTextField(){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

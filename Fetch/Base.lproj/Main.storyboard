@@ -65,6 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
+                                    <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLN-Tx-Vv1"/>
                                     <segue destination="sof-DJ-Wvz" kind="show" id="mLj-FG-MSl"/>
                                 </connections>
                             </button>
@@ -76,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="181.25937031484258"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
             <objects>
-                <viewController id="sof-DJ-Wvz" sceneMemberID="viewController">
+                <viewController id="sof-DJ-Wvz" customClass="QuizViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mag-xU-TU2"/>
                         <viewControllerLayoutGuide type="bottom" id="MrW-qB-XW8"/>
@@ -183,6 +184,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="NameField" destination="GTs-Hi-C5p" id="UBh-uv-Rzx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5q-FC-U9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
