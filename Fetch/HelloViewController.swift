@@ -1,26 +1,15 @@
 //
-//  QuizViewController.swift
+//  HelloViewController.swift
 //  Fetch
 //
-//  Created by Kristy Tan on 5/9/17.
+//  Created by Kristy Tan on 5/11/17.
 //  Copyright © 2017 Kristy Tan. All rights reserved.
 //
 
 import UIKit
 
-var name: String = ""
+class HelloViewController: UIViewController {
 
-class QuizViewController: UIViewController {
-    
-    //properties
-    @IBOutlet weak var NameField: UITextField!
-    
-    @IBAction func ContinueButton(_ sender: UIButton) {
-        
-        name = NameField.text!
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -77,6 +77,41 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="181.25937031484258"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KWn-G7-7Dz">
+            <objects>
+                <viewController id="mFN-nm-fCb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJT-CE-on0"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0C-Q9-gWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ItW-Fa-Nj1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-AQ-YaQ">
+                                <rect key="frame" x="152" y="340" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="AIe-nn-ggN" kind="show" id="irH-jC-uGZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-Tq-Pco">
+                                <rect key="frame" x="148" y="74" width="79" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mF-79-3IC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="904.49775112443785"/>
+        </scene>
         <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
             <objects>
@@ -177,8 +212,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
+                                    <action selector="ContinueButton:" destination="sof-DJ-Wvz" eventType="touchUpInside" id="2rP-Lp-gmU"/>
                                     <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR1-Q3-mWB"/>
-                                    <segue destination="AIe-nn-ggN" kind="show" id="mml-2e-ghz"/>
+                                    <segue destination="mFN-nm-fCb" kind="show" id="EHB-ua-hrd"/>
                                 </connections>
                             </button>
                         </subviews>
