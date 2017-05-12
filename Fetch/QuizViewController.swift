@@ -8,17 +8,12 @@
 
 import UIKit
 
+var name = ""
+
 class QuizViewController: UIViewController {
     
-    var name = ""
+    
     @IBOutlet weak var NameField: UITextField!
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        name = NameField.text!
-        let helloVc: HelloViewController = segue.destination as! HelloViewController
-        let passedPhrase = "Hello \name"
-        helloVc.receivedPhrase = passedPhrase
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +26,12 @@ class QuizViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        name = NameField.text!
+        let helloVc: HelloViewController = segue.destination as! HelloViewController
+        let passedPhrase = "Hello \name"
+        helloVc.receivedPhrase = passedPhrase
+    }
 
     /*
     // MARK: - Navigation

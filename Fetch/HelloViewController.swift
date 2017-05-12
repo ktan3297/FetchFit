@@ -18,6 +18,7 @@ class HelloViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         HelloName.text = receivedPhrase
+
     }
 
     override func didReceiveMemoryWarning() {

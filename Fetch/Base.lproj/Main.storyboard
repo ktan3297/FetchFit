@@ -59,14 +59,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgF-Vd-zht">
-                                <rect key="frame" x="158" y="614" width="58" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ve-7s-mZB">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLN-Tx-Vv1"/>
-                                    <segue destination="sof-DJ-Wvz" kind="show" id="JSx-XX-hXR"/>
+                                    <segue destination="sof-DJ-Wvz" kind="show" id="zK1-9j-J4k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,7 +117,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
             <objects>
-                <viewController id="sof-DJ-Wvz" customClass="QuizViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Quiz" id="sof-DJ-Wvz" customClass="QuizViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mag-xU-TU2"/>
                         <viewControllerLayoutGuide type="bottom" id="MrW-qB-XW8"/>
@@ -209,15 +208,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qn-uM-R86">
-                                <rect key="frame" x="141" y="436" width="93" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBS-su-nm9">
+                                <rect key="frame" x="135" y="437" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <action selector="ContinueButton:" destination="sof-DJ-Wvz" eventType="touchUpInside" id="2rP-Lp-gmU"/>
-                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR1-Q3-mWB"/>
-                                    <segue destination="mFN-nm-fCb" kind="show" id="EHB-ua-hrd"/>
+                                    <segue destination="mFN-nm-fCb" kind="show" id="JhY-fM-2WE"/>
                                 </connections>
                             </button>
                         </subviews>
