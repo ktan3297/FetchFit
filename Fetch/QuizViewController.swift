@@ -8,10 +8,10 @@
 
 import UIKit
 
-var name = ""
 
 class QuizViewController: UIViewController {
-    
+   
+    var name = ""
     
     @IBOutlet weak var NameField: UITextField!
     
@@ -29,7 +29,7 @@ class QuizViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         name = NameField.text!
         let helloVc: HelloViewController = segue.destination as! HelloViewController
-        let passedPhrase = "Hello \name"
+        let passedPhrase = "Hello \(name)"
         helloVc.receivedPhrase = passedPhrase
     }
 
