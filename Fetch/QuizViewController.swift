@@ -8,17 +8,16 @@
 
 import UIKit
 
-var name: String = ""
-
 class QuizViewController: UIViewController {
     
-    //properties
+    var name = ""
     @IBOutlet weak var NameField: UITextField!
-    
-    @IBAction func ContinueButton(_ sender: UIButton) {
-        
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         name = NameField.text!
-        
+        let helloVc: HelloViewController = segue.destination as! HelloViewController
+        let passedPhrase = "Hello \name"
+        helloVc.receivedPhrase = passedPhrase
     }
     
     override func viewDidLoad() {

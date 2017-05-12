@@ -66,7 +66,7 @@
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLN-Tx-Vv1"/>
-                                    <segue destination="sof-DJ-Wvz" kind="show" id="mLj-FG-MSl"/>
+                                    <segue destination="sof-DJ-Wvz" kind="show" id="JSx-XX-hXR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="181.25937031484258"/>
         </scene>
-        <!--View Controller-->
+        <!--Hello View Controller-->
         <scene sceneID="KWn-G7-7Dz">
             <objects>
-                <viewController id="mFN-nm-fCb" sceneMemberID="viewController">
+                <viewController id="mFN-nm-fCb" customClass="HelloViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJT-CE-on0"/>
                         <viewControllerLayoutGuide type="bottom" id="w0C-Q9-gWf"/>
@@ -107,10 +107,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="HelloName" destination="KeR-Tq-Pco" id="bf1-lE-kXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mF-79-3IC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.60000000000002" y="904.49775112443785"/>
+            <point key="canvasLocation" x="758" y="1004"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
@@ -294,7 +297,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ss-Mu-oT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="0TN-oe-tIc"/>
             </objects>
-            <point key="canvasLocation" x="1445.5999999999999" y="180.35982008995504"/>
+            <point key="canvasLocation" x="1537" y="178"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ccs-oj-Jg6">
@@ -352,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZd-D5-fhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="177.66116941529236"/>
+            <point key="canvasLocation" x="2287" y="180"/>
         </scene>
     </scenes>
     <resources>

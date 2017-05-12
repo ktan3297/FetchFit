@@ -14,13 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBAction func Start(_ sender: Any) {
-        
-     //   let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-
-        
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

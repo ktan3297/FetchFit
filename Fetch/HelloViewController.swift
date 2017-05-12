@@ -10,10 +10,14 @@ import UIKit
 
 class HelloViewController: UIViewController {
 
+    @IBOutlet weak var HelloName: UILabel!
+    var receivedPhrase = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        HelloName.text = receivedPhrase
     }
 
     override func didReceiveMemoryWarning() {
