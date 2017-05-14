@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ResultViewController.swift
 //  Fetch
 //
 //  Created by Kristy Tan on 5/3/17.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultViewController: UIViewController {
+    
+    @IBOutlet weak var ProfileButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
