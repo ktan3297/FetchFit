@@ -33,9 +33,22 @@ class QuizViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         name = NameField.text!
+        //age = AgeField.text!
+        season = SeasonField.text!
+        
         let helloVc: HelloViewController = segue.destination as! HelloViewController
         let passedPhrase = "Hello \(name)"
         helloVc.receivedPhrase = passedPhrase
+        
+        let popUpVc:PopUpViewController = segue.destination as! PopUpViewController
+        let namePhrase = name
+        popUpVc.receivedName = namePhrase
+        let seasonPhrase = season
+        popUpVc.receivedSeason = seasonPhrase
+        let stylePhrase = style
+        popUpVc.receivedStyle = stylePhrase
+
+        
     }
 
     /*

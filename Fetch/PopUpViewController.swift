@@ -9,7 +9,11 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
-
+    var receivedName = String()
+    var receivedAge = Int()
+    var receivedSeason = String()
+    var receivedStyle = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
