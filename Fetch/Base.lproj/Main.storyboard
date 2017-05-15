@@ -287,6 +287,9 @@
                     </view>
                     <connections>
                         <outlet property="NameField" destination="GTs-Hi-C5p" id="UBh-uv-Rzx"/>
+                        <outlet property="age" destination="dyO-XI-L7S" id="bTj-LG-Zmw"/>
+                        <outlet property="season" destination="eZ3-XH-zwl" id="kem-CH-nKl"/>
+                        <outlet property="style" destination="yXB-IA-Ows" id="dOX-q0-vaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5q-FC-U9D" userLabel="First Responder" sceneMemberID="firstResponder"/>

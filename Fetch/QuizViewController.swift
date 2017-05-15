@@ -12,8 +12,13 @@ import UIKit
 class QuizViewController: UIViewController {
    
     var name = ""
-    
+    var age = 0
+    var season = ""
+    var style = ""
     @IBOutlet weak var NameField: UITextField!
+    @IBOutlet weak var AgeField: UITextField!
+    @IBOutlet weak var SeasonField: UITextField!
+    @IBOutlet weak var StyleField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
