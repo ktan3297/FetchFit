@@ -117,7 +117,7 @@
         <!--Pop Up View Controller-->
         <scene sceneID="T0c-kN-EBN">
             <objects>
-                <viewController storyboardIdentifier="sbPopUpID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cyR-MH-uDW" customClass="PopUpViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbPopUpID" id="cyR-MH-uDW" customClass="PopUpViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Prp-Y1-Wzy"/>
                         <viewControllerLayoutGuide type="bottom" id="Qbk-Fw-8pM"/>
@@ -135,32 +135,6 @@
                                 </constraints>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" id="UCN-8t-l23">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UCN-8t-l23" id="RKb-Us-zMh">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="38" id="wR5-dh-iHa">
-                                        <rect key="frame" x="0.0" y="72" width="240" height="38"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wR5-dh-iHa" id="B33-2J-B5d">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="38"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="50" id="ARF-sN-OfN">
-                                        <rect key="frame" x="0.0" y="110" width="240" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARF-sN-OfN" id="cQV-bK-fGQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <sections/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXF-gx-2Nd">
@@ -287,9 +261,6 @@
                     </view>
                     <connections>
                         <outlet property="NameField" destination="GTs-Hi-C5p" id="UBh-uv-Rzx"/>
-                        <outlet property="age" destination="dyO-XI-L7S" id="bTj-LG-Zmw"/>
-                        <outlet property="season" destination="eZ3-XH-zwl" id="kem-CH-nKl"/>
-                        <outlet property="style" destination="yXB-IA-Ows" id="dOX-q0-vaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5q-FC-U9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
