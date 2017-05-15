@@ -15,6 +15,7 @@
 		00F3ECDB1EBAA6EF001864D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F3ECDA1EBAA6EF001864D0 /* Assets.xcassets */; };
 		00F3ECDE1EBAA6EF001864D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F3ECDC1EBAA6EF001864D0 /* LaunchScreen.storyboard */; };
 		00F3ECE91EBAA6EF001864D0 /* FetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3ECE81EBAA6EF001864D0 /* FetchTests.swift */; };
+		188B5E101EC92F46006AD50C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B5E0F1EC92F46006AD50C /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		00F3ECE41EBAA6EF001864D0 /* FetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3ECE81EBAA6EF001864D0 /* FetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTests.swift; sourceTree = "<group>"; };
 		00F3ECEA1EBAA6EF001864D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188B5E0F1EC92F46006AD50C /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				00F3ECDC1EBAA6EF001864D0 /* LaunchScreen.storyboard */,
 				00F3ECDF1EBAA6EF001864D0 /* Info.plist */,
 				001FE27D1EC4DA6E005744A9 /* HelloViewController.swift */,
+				188B5E0F1EC92F46006AD50C /* PopUpViewController.swift */,
 			);
 			path = Fetch;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188B5E101EC92F46006AD50C /* PopUpViewController.swift in Sources */,
 				0013172D1EC2128F0089DC89 /* QuizViewController.swift in Sources */,
 				00F3ECD61EBAA6EF001864D0 /* ResultViewController.swift in Sources */,
 				00F3ECD41EBAA6EF001864D0 /* AppDelegate.swift in Sources */,
