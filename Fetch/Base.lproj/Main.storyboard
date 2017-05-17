@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -114,6 +114,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mF-79-3IC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="757.60000000000002" y="1003.4482758620691"/>
+        </scene>
+        <!--Pop Up Table View Controller-->
+        <scene sceneID="2Po-s9-w5s">
+            <objects>
+                <tableViewController storyboardIdentifier="tablePopUpID" id="eGu-4E-TgU" customClass="PopUpTableViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NGp-OJ-B9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Section-1" id="oFs-rl-2vM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ebq-g7-7qG">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebq-g7-7qG" id="jq9-Ah-wRf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JCg-sM-5Y9">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JCg-sM-5Y9" id="eic-Sr-LDg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eef-I5-ab7">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eef-I5-ab7" id="1Ir-iE-KCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VIm-l9-ZxO">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIm-l9-ZxO" id="cLT-b6-lFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eGu-4E-TgU" id="aJn-RM-qWk"/>
+                            <outlet property="delegate" destination="eGu-4E-TgU" id="ZLQ-kx-NRu"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="cellFour" destination="VIm-l9-ZxO" id="Aat-BC-njL"/>
+                        <outlet property="cellOne" destination="ebq-g7-7qG" id="ytr-qo-BVt"/>
+                        <outlet property="cellThree" destination="eef-I5-ab7" id="nUR-Lj-gYY"/>
+                        <outlet property="cellTwo" destination="JCg-sM-5Y9" id="hiJ-Ja-KsH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNb-zt-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="906"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
@@ -249,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="757.60000000000002" y="180.35982008995504"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="InB-mT-yG4">
             <objects>
-                <viewController id="AIe-nn-ggN" sceneMemberID="viewController">
+                <viewController id="AIe-nn-ggN" customClass="ResultViewController" customModule="Fetch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yE4-qw-zln"/>
                         <viewControllerLayoutGuide type="bottom" id="APM-AW-T5q"/>
@@ -288,7 +350,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pink_dress" translatesAutoresizingMaskIntoConstraints="NO" id="ra6-BC-0wt">
-                                <rect key="frame" x="67" y="111" width="240" height="333"/>
+                                <rect key="frame" x="67" y="108" width="240" height="333"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
@@ -304,6 +366,20 @@
                                     <segue destination="bTr-Ge-Wbj" kind="show" id="rd1-CT-O31"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-W5-cq6">
+                                <rect key="frame" x="16" y="20" width="63" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ProfileButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="AIe-nn-ggN" eventType="touchUpInside" id="zo1-RE-PYt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -311,11 +387,14 @@
                             <outletCollection property="gestureRecognizers" destination="0TN-oe-tIc" appends="YES" id="oeF-Ee-pyz"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="ProfileButton" destination="RTe-W5-cq6" id="eWj-L2-ziG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ss-Mu-oT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="0TN-oe-tIc"/>
             </objects>
-            <point key="canvasLocation" x="1537" y="178"/>
+            <point key="canvasLocation" x="1536.8" y="177.66116941529236"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ccs-oj-Jg6">
@@ -377,6 +456,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ProfileButton" width="240" height="240"/>
         <image name="adidas_superstar" width="640" height="489"/>
         <image name="crop_top_green" width="300" height="300"/>
         <image name="pink_dress" width="600" height="800"/>

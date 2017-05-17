@@ -106,6 +106,11 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let helloVc: HelloViewController = segue.destination as! HelloViewController
         let passedPhrase = "Hello \(name)"
         helloVc.receivedPhrase = passedPhrase
+        
+      
+     
+
+        
     }
 
     /*

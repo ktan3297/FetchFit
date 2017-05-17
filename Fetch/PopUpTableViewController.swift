@@ -1,23 +1,24 @@
 //
-//  HelloViewController.swift
+//  PopUpTableViewController.swift
 //  Fetch
 //
-//  Created by Kristy Tan on 5/11/17.
+//  Created by APPLE on 5/16/17.
 //  Copyright © 2017 Kristy Tan. All rights reserved.
 //
 
 import UIKit
 
-class HelloViewController: UIViewController {
+class PopUpTableViewController: UITableViewController {
 
-    @IBOutlet weak var HelloName: UILabel!
-    var receivedPhrase = String()
+    @IBOutlet weak var cellOne: UITableViewCell!
+    @IBOutlet weak var cellTwo: UITableViewCell!
+    @IBOutlet weak var cellThree: UITableViewCell!
+    @IBOutlet weak var cellFour: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        HelloName.text = receivedPhrase
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

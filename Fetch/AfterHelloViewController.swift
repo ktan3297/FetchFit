@@ -1,23 +1,19 @@
 //
-//  HelloViewController.swift
+//  AfterHelloViewController.swift
 //  Fetch
 //
-//  Created by Kristy Tan on 5/11/17.
+//  Created by APPLE on 5/12/17.
 //  Copyright © 2017 Kristy Tan. All rights reserved.
 //
 
 import UIKit
 
-class HelloViewController: UIViewController {
+class AfterHelloViewController: UIViewController {
 
-    @IBOutlet weak var HelloName: UILabel!
-    var receivedPhrase = String()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        HelloName.text = receivedPhrase
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
