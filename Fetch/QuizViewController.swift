@@ -9,11 +9,86 @@
 import UIKit
 
 
-class QuizViewController: UIViewController {
-   
-    var name = ""
+class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var NameField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var seasonField: UITextField!
+    @IBOutlet weak var styleField: UITextField!
+    
+    @IBOutlet weak var options: UIPickerView!
+   
+    var name = ""
+    var idLabel = ""
+    
+    var ages = ["13", "14", "15", "16", "17", "18", "19", "20", "21"]
+    
+    var seasons = ["Autumn", "Winter", "Spring", "Summer"]
+    
+    var styles = ["Casual","Elegant", "Sophisticated", "Athletic"]
+    
+    @IBAction func ageLabelClicked(_ sender: UITextField) {
+        idLabel = "ages"
+        options.reloadAllComponents()
+        options.isHidden = false
+    }
+    
+    @IBAction func seasonLabel(_ sender: UITextField) {
+        idLabel = "seasons"
+        options.reloadAllComponents()
+        options.isHidden = false
+    }
+    
+    @IBAction func styleLabelClicked(_ sender: UITextField) {
+        idLabel = "styles"
+        options.reloadAllComponents()
+        options.isHidden = false
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch idLabel {
+            case "seasons":
+                return seasons[row]
+            case "styles":
+                return styles[row]
+        default:
+            return ages[row]
+        }
+       
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch idLabel {
+            case "seasons":
+                return seasons.count
+            case "styles":
+                return styles.count
+        default:
+            return ages.count
+        }
+
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch idLabel {
+            case "seasons":
+                seasonField.text = seasons[row]
+                options.isHidden = true
+            case "styles":
+                styleField.text = styles[row]
+                options.isHidden = true
+
+        default:
+             ageField.text = ages[row]
+             options.isHidden = true
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
