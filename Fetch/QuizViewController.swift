@@ -17,7 +17,7 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var styleField: UITextField!
     
     @IBOutlet weak var options: UIPickerView!
-   
+    static var profile: Profile! = Profile(name: "", age: "", season: "", style: "")
     var name = ""
     var idLabel = ""
     
@@ -88,8 +88,6 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         }
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -107,7 +105,10 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let passedPhrase = "Hello \(name)"
         helloVc.receivedPhrase = passedPhrase
         
-      
+        QuizViewController.profile.name = name
+        QuizViewController.profile.age = ageField.text!
+        QuizViewController.profile.season = seasonField.text!
+        QuizViewController.profile.style = styleField.text!
      
 
         

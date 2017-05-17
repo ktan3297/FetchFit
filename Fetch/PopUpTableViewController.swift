@@ -15,9 +15,18 @@ class PopUpTableViewController: UITableViewController {
     @IBOutlet weak var cellThree: UITableViewCell!
     @IBOutlet weak var cellFour: UITableViewCell!
     
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var seasonLabel: UILabel!
+    @IBOutlet weak var userStyle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userName.text = QuizViewController.profile.name
+        ageLabel.text = QuizViewController.profile.age
+        seasonLabel.text = QuizViewController.profile.season
+        userStyle.text = QuizViewController.profile.style
+        
         // Do any additional setup after loading the view.
     }
 
