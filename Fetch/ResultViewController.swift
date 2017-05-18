@@ -11,12 +11,23 @@ import UIKit
 class ResultViewController: UIViewController {
     
     @IBOutlet weak var ProfileButton: UIButton!
+  
+    @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var bottomImage: UIImageView!
+    @IBOutlet weak var shoesImage: UIImageView!
     
-    override func viewDidLoad() {
+    
+    @IBOutlet var topTap: UITapGestureRecognizer! = UITapGestureRecognizer(target:self,action: #selector(changeTop))
+
+       override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+ 
+    func changeTop(_sender: UITapGestureRecognizer)
+    {
+        topImage.image = UIImage(named:"elegantShirt")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
