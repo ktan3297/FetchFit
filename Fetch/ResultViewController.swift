@@ -29,6 +29,13 @@ class ResultViewController: UIViewController {
         popOverVC.didMove( toParentViewController: self)
         
     }
-
+    
+    @IBAction func swipeR(_ sender: Any) {
+    }
+    
+    
+    @IBAction func swipeL(_ sender: Any) {
+    }
+    
 }
 

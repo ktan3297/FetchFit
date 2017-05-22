@@ -109,9 +109,6 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         QuizViewController.profile.age = ageField.text!
         QuizViewController.profile.season = seasonField.text!
         QuizViewController.profile.style = styleField.text!
-     
-
-        
     }
 
     /*

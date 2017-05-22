@@ -451,16 +451,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="0TN-oe-tIc" appends="YES" id="oeF-Ee-pyz"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="ProfileButton" destination="RTe-W5-cq6" id="eWj-L2-ziG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ss-Mu-oT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="0TN-oe-tIc"/>
+                <swipeGestureRecognizer direction="right" id="zeR-i2-fo2">
+                    <connections>
+                        <action selector="swipeR:" destination="AIe-nn-ggN" id="BQD-4c-55A"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="rrZ-h5-kkA">
+                    <connections>
+                        <action selector="swipeL:" destination="AIe-nn-ggN" id="YSQ-JF-LHO"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1536.8" y="177.66116941529236"/>
         </scene>
