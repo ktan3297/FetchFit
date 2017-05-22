@@ -16,17 +16,14 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var bottomImage: UIImageView!
     @IBOutlet weak var shoesImage: UIImageView!
     
+    var elegantTops = ["elegantShirt.jpg","ruffleTop.jpg","paisleyTank.jpeg"]
+    var casualTops = ["girlyTee.jpg", "stripedTee.jpg", "summerFloralTop.jpg"]
     
-    @IBOutlet var topTap: UITapGestureRecognizer! = UITapGestureRecognizer(target:self,action: #selector(changeTop))
-
+    
        override func viewDidLoad() {
         super.viewDidLoad()
+       
         // Do any additional setup after loading the view, typically from a nib.
-    }
- 
-    func changeTop(_sender: UITapGestureRecognizer)
-    {
-        topImage.image = UIImage(named:"elegantShirt")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,9 +38,17 @@ class ResultViewController: UIViewController {
         
     }
     
-    @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func swipeR(sender: UISwipeGestureRecognizer) {
+        self.topImage.image = UIImage(named:"elegantShirt.jpg")
+//        viewDidLoad()
+//        self.view.backgroundColor = UIColor.red
     }
+    
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
+        self.topImage.image = UIImage(named:"elegantShirt.jpg")
     }
+//    @IBAction func test(_ sender: UISwipeGestureRecognizer) {
+//        self.view.backgroundColor = UIColor.red
+//    }
 }
 
