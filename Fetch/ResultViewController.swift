@@ -41,12 +41,9 @@ class ResultViewController: UIViewController {
         
     }
     
-    @IBAction func swipeR(_ sender: Any) {
+    @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
     }
-    
-    
-    @IBAction func swipeL(_ sender: Any) {
+    @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
     }
-    
 }
 
