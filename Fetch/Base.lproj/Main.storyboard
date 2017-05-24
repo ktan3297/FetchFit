@@ -439,53 +439,33 @@
                                     <action selector="showPopup:" destination="AIe-nn-ggN" eventType="touchUpInside" id="zo1-RE-PYt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSb-QU-SvR">
-                                <rect key="frame" x="65" y="309" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-jf-9ac">
+                                <rect key="frame" x="65" y="110" width="240" height="446"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOR-6y-o3t">
-                                <rect key="frame" x="65" y="456" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="embroideredSweatshirt" translatesAutoresizingMaskIntoConstraints="NO" id="F1h-j0-EyR">
-                                <rect key="frame" x="65" y="104" width="240" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="u8U-hg-8L7" appends="YES" id="XPj-rW-RHW"/>
-                                    <outletCollection property="gestureRecognizers" destination="4WB-5a-Q0g" appends="YES" id="hmF-xj-RVa"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="EfP-pg-7Yl" appends="YES" id="rVG-ef-UgN"/>
+                            <outletCollection property="gestureRecognizers" destination="4b0-Aj-y3i" appends="YES" id="T2o-O7-leT"/>
+                            <outletCollection property="gestureRecognizers" destination="cCs-x5-v5e" appends="YES" id="44d-jp-SFk"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="ProfileButton" destination="RTe-W5-cq6" id="eWj-L2-ziG"/>
-                        <outlet property="bottomImage" destination="pSb-QU-SvR" id="XPF-Un-Qey"/>
-                        <outlet property="shoesImage" destination="wOR-6y-o3t" id="CxJ-7J-Z1v"/>
-                        <outlet property="topImage" destination="F1h-j0-EyR" id="gID-wc-gCZ"/>
+                        <outlet property="outfit" destination="rkh-jf-9ac" id="Y0A-ny-Sk8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ss-Mu-oT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="u8U-hg-8L7">
+                <swipeGestureRecognizer direction="right" id="4b0-Aj-y3i">
                     <connections>
-                        <action selector="swipeR:" destination="AIe-nn-ggN" id="uot-nn-Bqk"/>
+                        <action selector="swipeR:" destination="AIe-nn-ggN" id="khZ-g8-BML"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="4WB-5a-Q0g">
+                <swipeGestureRecognizer direction="left" id="cCs-x5-v5e">
                     <connections>
-                        <action selector="swipeL:" destination="AIe-nn-ggN" id="g4t-Gf-god"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="EfP-pg-7Yl">
-                    <connections>
-                        <action selector="test:" destination="AIe-nn-ggN" id="WpK-Ff-54H"/>
+                        <action selector="swipeL:" destination="AIe-nn-ggN" id="6Ep-fq-yt0"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -554,7 +534,6 @@
         <image name="ProfileButton" width="240" height="240"/>
         <image name="adidas_superstar" width="640" height="489"/>
         <image name="crop_top_green" width="300" height="300"/>
-        <image name="embroideredSweatshirt" width="1020" height="1530"/>
         <image name="sandals" width="600" height="600"/>
         <image name="shorts" width="1150" height="1500"/>
         <image name="skinny_jeans" width="920" height="1380"/>
