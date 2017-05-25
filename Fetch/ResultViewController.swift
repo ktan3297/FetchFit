@@ -37,6 +37,7 @@ class ResultViewController: UIViewController {
         {
             outfit.image = UIImage(named: winterOutfits[0][0])
         }
+        chooseOutfitArray();
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
@@ -47,19 +48,19 @@ class ResultViewController: UIViewController {
     {
         if(QuizViewController.profile.season == "Spring")
         {
-             outfits = springOutfits
+              outfits = springOutfits
         }
-        else if(QuizViewController.profile.season == "Spring")
+        else if(QuizViewController.profile.season == "Summer")
         {
-            outfits = springOutfits
+             outfits = summerOutfits
         }
         else if(QuizViewController.profile.season == "Autumn")
         {
-            outfits = autumnOutfits
+             outfits = autumnOutfits
         }
         else
         {
-            outfits = winterOutfits
+             outfits = winterOutfits
         }
     }
     @IBAction func showPopup(_ sender: AnyObject) {
@@ -76,25 +77,28 @@ class ResultViewController: UIViewController {
         {
             if(QuizViewController.profile.style == "Sophisticated")
             {
-                outfit.image = UIImage(named: outfits[0][index-1])
+                 outfit.image = UIImage(named: outfits[0][index-1])
+                index-=1
             }
             else if(QuizViewController.profile.style == "Elegant")
             {
                 outfit.image = UIImage(named: outfits[1][index-1])
+                index-=1
             }
             else if(QuizViewController.profile.style == "Casual")
             {
                 outfit.image = UIImage(named: outfits[2][index-1])
+                index-=1
             }
             else
             {
                 outfit.image = UIImage(named: outfits[3][index-1])
+                index-=1
             }
         }
         else{
         //do nothing
         }
-        outfit.image = #imageLiteral(resourceName: "fallElegant1")
     }
     
     
@@ -104,18 +108,22 @@ class ResultViewController: UIViewController {
             if(QuizViewController.profile.style == "Sophisticated")
             {
                 outfit.image = UIImage(named: outfits[0][index+1])
+                index+=1
             }
             else if(QuizViewController.profile.style == "Elegant")
             {
                 outfit.image = UIImage(named: outfits[1][index+1])
+                index+=1
             }
             else if(QuizViewController.profile.style == "Casual")
             {
                 outfit.image = UIImage(named: outfits[2][index+1])
+                index+=1
             }
             else
             {
                 outfit.image = UIImage(named: outfits[3][index+1])
+                index+=1
             }
         }
         else{

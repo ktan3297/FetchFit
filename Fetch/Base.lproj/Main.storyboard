@@ -34,18 +34,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crop_top_green" translatesAutoresizingMaskIntoConstraints="NO" id="QCC-aj-8f3">
-                                <rect key="frame" x="99" y="87" width="177" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skinny_jeans" translatesAutoresizingMaskIntoConstraints="NO" id="suv-D3-YiQ">
-                                <rect key="frame" x="77" y="244" width="221" height="249"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adidas_superstar" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-0Z-gQx">
-                                <rect key="frame" x="87" y="494" width="211" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcm-qL-Hdb">
                                 <rect key="frame" x="111" y="58" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +56,10 @@
                                     <segue destination="sof-DJ-Wvz" kind="show" id="zK1-9j-J4k"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="startScreen" translatesAutoresizingMaskIntoConstraints="NO" id="l85-FR-gFy">
+                                <rect key="frame" x="16" y="97" width="343" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -532,11 +524,9 @@
     </scenes>
     <resources>
         <image name="ProfileButton" width="240" height="240"/>
-        <image name="adidas_superstar" width="640" height="489"/>
-        <image name="crop_top_green" width="300" height="300"/>
         <image name="sandals" width="600" height="600"/>
         <image name="shorts" width="1150" height="1500"/>
-        <image name="skinny_jeans" width="920" height="1380"/>
+        <image name="startScreen" width="640" height="640"/>
         <image name="wtf_shirt" width="540" height="720"/>
     </resources>
 </document>
