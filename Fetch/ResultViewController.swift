@@ -15,11 +15,16 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var outfit: UIImageView!
     var outfits = [[String]]()
     var springOutfits = [["springSophisticated1", "springSophisticated2", "springSophisticated3", "springSophisticated4", "springSophisticated5"],["springElegant1", "springElegant2", "springElegant3", "springElegant4", "springElegant5"],["springCasual1", "springCasual2", "springCasual3", "springCasual4", "springCasual5"],["springAthletic1", "springAthletic2", "springAthletic3", "springAthletic4", "springAthletic5"]]
+    
     var summerOutfits = [["summerSophisticated1", "summerSophisticated2", "summerSophisticated3", "summerSophisticated4", "summerSophisticated5"],["summerElegant1", "summerElegant2", "summerElegant3", "summerElegant4", "summerElegant5"],["summerCasual1", "summerCasual2", "summerCasual3", "summerCasual4", "summerCasual5"],["summerAthletic1", "summerAthletic2", "summerAthletic3", "summerAthletic4", "summerAthletic5"]]
+   
     var autumnOutfits = [["autumnSophisticated1", "autumnSophisticated2", "autumnSophisticated3", "autumnSophisticated4", "autumnSophisticated5"],["autumnElegant1", "autumnElegant2", "autumnElegant3", "autumnElegant4", "autumnElegant5"],["autumnCasual1", "autumnCasual2", "autumnCasual3", "autumnCasual4", "autumnCasual5"],["autumnAthletic1", "autumnAthletic2", "autumnAthletic3", "autumnAthletic4", "autumnAthletic5"]]
+    
     var winterOutfits = [["winterSophisticated1", "winterSophisticated2", "winterSophisticated3", "winterSophisticated4", "winterSophisticated5"],["winterElegant1", "winterElegant2", "winterElegant3", "winterElegant4", "winterElegant5"],["winterCasual1", "winterCasual2", "winterCasual3", "winterCasual4", "winterCasual5"],["winterAthletic1", "winterAthletic2", "winterAthletic3", "winterAthletic4", "winterAthletic5"]]
+    
     var index = 0
-       override func viewDidLoad() {
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         if(QuizViewController.profile.season == "Spring")
         {
@@ -40,10 +45,12 @@ class ResultViewController: UIViewController {
         chooseOutfitArray();
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func chooseOutfitArray()
     {
         if(QuizViewController.profile.season == "Spring")
@@ -63,6 +70,7 @@ class ResultViewController: UIViewController {
              outfits = winterOutfits
         }
     }
+    
     @IBAction func showPopup(_ sender: AnyObject) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tablePopUpID") as! PopUpTableViewController
         self.addChildViewController(popOverVC)
