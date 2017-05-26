@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0013172D1EC2128F0089DC89 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013172C1EC2128F0089DC89 /* QuizViewController.swift */; };
 		001FE27E1EC4DA6E005744A9 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FE27D1EC4DA6E005744A9 /* HelloViewController.swift */; };
+		0063E0B21ED8924800DC152C /* CameraAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063E0B11ED8924800DC152C /* CameraAccessViewController.swift */; };
 		007AF4AF1ECCB10C00340E70 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AF4AE1ECCB10C00340E70 /* Profile.swift */; };
 		00F3ECD41EBAA6EF001864D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3ECD31EBAA6EF001864D0 /* AppDelegate.swift */; };
 		00F3ECD61EBAA6EF001864D0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3ECD51EBAA6EF001864D0 /* ResultViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		0013172C1EC2128F0089DC89 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		001FE27D1EC4DA6E005744A9 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		0063E0B11ED8924800DC152C /* CameraAccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAccessViewController.swift; sourceTree = "<group>"; };
 		007AF4AE1ECCB10C00340E70 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		00F3ECD01EBAA6EF001864D0 /* Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3ECD31EBAA6EF001864D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				00F3ECD31EBAA6EF001864D0 /* AppDelegate.swift */,
 				00F3ECD51EBAA6EF001864D0 /* ResultViewController.swift */,
 				00F3ECD71EBAA6EF001864D0 /* Main.storyboard */,
+				0063E0B11ED8924800DC152C /* CameraAccessViewController.swift */,
 				0013172C1EC2128F0089DC89 /* QuizViewController.swift */,
 				00F3ECDA1EBAA6EF001864D0 /* Assets.xcassets */,
 				00F3ECDC1EBAA6EF001864D0 /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				TargetAttributes = {
 					00F3ECCF1EBAA6EF001864D0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4STMP5799W;
 						ProvisioningStyle = Automatic;
 					};
 					00F3ECE31EBAA6EF001864D0 = {
@@ -215,6 +219,7 @@
 				007AF4AF1ECCB10C00340E70 /* Profile.swift in Sources */,
 				00F3ECD61EBAA6EF001864D0 /* ResultViewController.swift in Sources */,
 				00F3ECD41EBAA6EF001864D0 /* AppDelegate.swift in Sources */,
+				0063E0B21ED8924800DC152C /* CameraAccessViewController.swift in Sources */,
 				1818DDD81ECB2D4A004C6060 /* PopUpTableViewController.swift in Sources */,
 				001FE27E1EC4DA6E005744A9 /* HelloViewController.swift in Sources */,
 			);
@@ -358,10 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4STMP5799W;
 				INFOPLIST_FILE = Fetch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fetch;
+				PRODUCT_BUNDLE_IDENTIFIER = k2s2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -373,10 +378,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4STMP5799W;
 				INFOPLIST_FILE = Fetch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fetch;
+				PRODUCT_BUNDLE_IDENTIFIER = k2s2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
