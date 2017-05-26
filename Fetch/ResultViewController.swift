@@ -101,6 +101,7 @@ class ResultViewController: UIViewController {
         }
     }
     
+    //switch left and right code
     
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         if(index < 5)
