@@ -27,19 +27,31 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     var styles = ["Casual","Elegant", "Sophisticated", "Athletic"]
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        self.resignFirstResponder()
+        options.isHidden = true
+    }
+    
     @IBAction func ageLabelClicked(_ sender: UITextField) {
+        ageField.becomeFirstResponder()
+        ageField.resignFirstResponder()
         idLabel = "ages"
         options.reloadAllComponents()
         options.isHidden = false
     }
     
     @IBAction func seasonLabel(_ sender: UITextField) {
+        seasonField.becomeFirstResponder()
+        seasonField.resignFirstResponder()
         idLabel = "seasons"
         options.reloadAllComponents()
         options.isHidden = false
     }
     
     @IBAction func styleLabelClicked(_ sender: UITextField) {
+        styleField.becomeFirstResponder()
+        styleField.resignFirstResponder()
         idLabel = "styles"
         options.reloadAllComponents()
         options.isHidden = false
@@ -70,7 +82,6 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         default:
             return ages.count
         }
-
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
