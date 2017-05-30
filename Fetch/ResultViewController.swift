@@ -73,32 +73,33 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
-        if(index > 0)
-        {
-            if(QuizViewController.profile.style == "Sophisticated")
-            {
-                 outfit.image = UIImage(named: outfits[0][index-1])
-                index-=1
-            }
-            else if(QuizViewController.profile.style == "Elegant")
-            {
-                outfit.image = UIImage(named: outfits[1][index-1])
-                index-=1
-            }
-            else if(QuizViewController.profile.style == "Casual")
-            {
-                outfit.image = UIImage(named: outfits[2][index-1])
-                index-=1
-            }
-            else
-            {
-                outfit.image = UIImage(named: outfits[3][index-1])
-                index-=1
-            }
-        }
-        else{
-        //do nothing
-        }
+//        if(index > 0)
+//        {
+//            if(QuizViewController.profile.style == "Sophisticated")
+//            {
+//                 outfit.image = UIImage(named: outfits[0][index-1])
+//                index-=1
+//            }
+//            else if(QuizViewController.profile.style == "Elegant")
+//            {
+//                outfit.image = UIImage(named: outfits[1][index-1])
+//                index-=1
+//            }
+//            else if(QuizViewController.profile.style == "Casual")
+//            {
+//                outfit.image = UIImage(named: outfits[2][index-1])
+//                index-=1
+//            }
+//            else
+//            {
+//                outfit.image = UIImage(named: outfits[3][index-1])
+//                index-=1
+//            }
+//        }
+//        else{
+//        //do nothing
+//        }
+        
     }
     
     
