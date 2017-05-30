@@ -13,6 +13,7 @@ class Profile {
     var season: String
     var style: String
     
+    
     init(name:String, age:String, season:String, style: String){
         self.name = name
         self.age = age

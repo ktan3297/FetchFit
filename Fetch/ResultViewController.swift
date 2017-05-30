@@ -14,6 +14,7 @@ class ResultViewController: UIViewController {
   
     @IBOutlet weak var outfit: UIImageView!
     var outfits = [[String]]()
+    var savedOutfit = UIImage()
     var springOutfits = [["springSophisticated1", "springSophisticated2", "springSophisticated3", "springSophisticated4", "springSophisticated5"],["springElegant1", "springElegant2", "springElegant3", "springElegant4", "springElegant5"],["springCasual1", "springCasual2", "springCasual3", "springCasual4", "springCasual5"],["springAthletic1", "springAthletic2", "springAthletic3", "springAthletic4", "springAthletic5"]]
     var summerOutfits = [["summerSophisticated1", "summerSophisticated2", "summerSophisticated3", "summerSophisticated4", "summerSophisticated5"],["summerElegant1", "summerElegant2", "summerElegant3", "summerElegant4", "summerElegant5"],["summerCasual1", "summerCasual2", "summerCasual3", "summerCasual4", "summerCasual5"],["summerAthletic1", "summerAthletic2", "summerAthletic3", "summerAthletic4", "summerAthletic5"]]
     var autumnOutfits = [["autumnSophisticated1", "autumnSophisticated2", "autumnSophisticated3", "autumnSophisticated4", "autumnSophisticated5"],["autumnElegant1", "autumnElegant2", "autumnElegant3", "autumnElegant4", "autumnElegant5"],["autumnCasual1", "autumnCasual2", "autumnCasual3", "autumnCasual4", "autumnCasual5"],["autumnAthletic1", "autumnAthletic2", "autumnAthletic3", "autumnAthletic4", "autumnAthletic5"]]
@@ -73,35 +74,8 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
-//        if(index > 0)
-//        {
-//            if(QuizViewController.profile.style == "Sophisticated")
-//            {
-//                 outfit.image = UIImage(named: outfits[0][index-1])
-//                index-=1
-//            }
-//            else if(QuizViewController.profile.style == "Elegant")
-//            {
-//                outfit.image = UIImage(named: outfits[1][index-1])
-//                index-=1
-//            }
-//            else if(QuizViewController.profile.style == "Casual")
-//            {
-//                outfit.image = UIImage(named: outfits[2][index-1])
-//                index-=1
-//            }
-//            else
-//            {
-//                outfit.image = UIImage(named: outfits[3][index-1])
-//                index-=1
-//            }
-//        }
-//        else{
-//        //do nothing
-//        }
-        
+        let savedOutfit = outfit.image
     }
-    
     
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         if(index < 5)
