@@ -269,33 +269,42 @@
                                     <segue destination="AIe-nn-ggN" kind="show" id="WBr-df-Gv8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBP-xR-9iK">
-                                <rect key="frame" x="16" y="532" width="73" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjT-gB-LQ3">
+                                <rect key="frame" x="32" y="522" width="46" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oz3-RR-eHE">
-                                <rect key="frame" x="97" y="532" width="73" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-xD-5Ol">
-                                <rect key="frame" x="178" y="532" width="73" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQd-IC-esc">
-                                <rect key="frame" x="259" y="532" width="73" height="77"/>
+                                <state key="normal" backgroundImage="heart"/>
+                                <connections>
+                                    <action selector="tapSticker:" destination="kUi-ot-qcd" eventType="touchUpInside" id="cVp-cC-Ae1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mte-4m-md5">
+                                <rect key="frame" x="67" y="359" width="61" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYj-z9-H9Y">
+                                <rect key="frame" x="261" y="83" width="46" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-wc-op5">
+                                <rect key="frame" x="99" y="522" width="46" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="autumnAthletic4"/>
+                                <connections>
+                                    <action selector="tapSticker2:" destination="kUi-ot-qcd" eventType="touchUpInside" id="Yhw-ut-SLd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="camSticker1" destination="mte-4m-md5" id="fRf-zY-Pby"/>
+                        <outlet property="camSticker2" destination="jYj-z9-H9Y" id="DwB-ZV-bqk"/>
                         <outlet property="imageDisplay" destination="C7k-yv-0bg" id="sdd-js-tI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAQ-1o-jpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584.8000000000002" y="180.35982008995504"/>
+            <point key="canvasLocation" x="2669.5999999999999" y="182.15892053973016"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="MEg-td-9Oq">
@@ -536,6 +545,8 @@
     </scenes>
     <resources>
         <image name="ProfileButton" width="240" height="240"/>
+        <image name="autumnAthletic4" width="640" height="806"/>
+        <image name="heart" width="720" height="720"/>
         <image name="startScreen" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>

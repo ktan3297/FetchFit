@@ -9,10 +9,20 @@
 import UIKit
 
 class CameraAccessViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
+    
     @IBOutlet weak var imageDisplay: UIImageView!
+    @IBOutlet weak var camSticker1: UIImageView!
+    @IBOutlet weak var camSticker2: UIImageView!
     
+    @IBAction func tapSticker(_ sender: UIButton) {
+        camSticker1.image = #imageLiteral(resourceName: "heart")
+        
+    }
     
+    @IBAction func tapSticker2(_ sender: UIButton) {
+        camSticker2.image = #imageLiteral(resourceName: "autumnAthletic4")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
