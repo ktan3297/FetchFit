@@ -13,16 +13,28 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     @IBOutlet weak var imageDisplay: UIImageView!
     @IBOutlet weak var camSticker1: UIImageView!
     @IBOutlet weak var camSticker2: UIImageView!
+    @IBOutlet weak var camSticker3: UIImageView!
+    
+    var heart1 = 0
     
     @IBAction func tapSticker(_ sender: UIButton) {
-        camSticker1.image = #imageLiteral(resourceName: "heart")
-        
+        heart1 += 1
+        if(heart1 == 1){
+            camSticker1.image = #imageLiteral(resourceName: "heart")
+        }
+        else{
+            heart1 = 0
+            camSticker1.image = nil
+        }
     }
     
     @IBAction func tapSticker2(_ sender: UIButton) {
-        camSticker2.image = #imageLiteral(resourceName: "autumnAthletic4")
+        camSticker2.image = #imageLiteral(resourceName: "moustache")
     }
 
+    @IBAction func tapSticker3(_ sender: UIButton) {
+        camSticker3.image = #imageLiteral(resourceName: "pink_crown")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
