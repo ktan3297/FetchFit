@@ -12,13 +12,15 @@ class Profile {
     var age: String
     var season: String
     var style: String
-    
-    
-    init(name:String, age:String, season:String, style: String){
+    var arrInd: Int
+    var subInd: Int
+    init(name:String, age:String, season:String, style: String, arrInd: Int, subInd: Int){
         self.name = name
         self.age = age
         self.season = season
         self.style = style
+        self.subInd = subInd
+        self.arrInd = arrInd
     }
     
 }

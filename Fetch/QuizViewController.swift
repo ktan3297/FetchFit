@@ -17,7 +17,7 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var styleField: UITextField!
     
     @IBOutlet weak var options: UIPickerView!
-    static var profile: Profile! = Profile(name: "", age: "", season: "", style: "")
+    static var profile: Profile! = Profile(name: "", age: "", season: "", style: "", arrInd: 0, subInd: 0)
     var name = ""
     var idLabel = ""
     
