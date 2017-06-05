@@ -70,6 +70,27 @@ class ResultViewController: UIViewController {
         //self.performSegue(withIdentifier: "popUp", sender: "swipeR")
 
     }
+//   @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
+//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "popUp" {
+            let dvc = segue.destination as! PopUpTableViewController
+            let spring = springOutfits
+            let summer = summerOutfits
+            let autumn = autumnOutfits
+            let winter = winterOutfits
+            
+            dvc.spring = spring
+            dvc.summer = summer
+            dvc.autumn = autumn
+            dvc.winter = winter
+            
+            let chosen = self.chosen
+            dvc.chosenBool = chosen
+        }
+        
+    }
+    
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         index += 1
         if index > 4 {
@@ -106,41 +127,20 @@ class ResultViewController: UIViewController {
         if(QuizViewController.profile.style == "Sophisticated")
         {
             outfit.image = UIImage(named: outfits[0][index])
-            
         }
         else if(QuizViewController.profile.style == "Elegant")
         {
             outfit.image = UIImage(named: outfits[1][index])
-            
         }
         else if(QuizViewController.profile.style == "Casual")
         {
             outfit.image = UIImage(named: outfits[2][index])
-            
         }
         else
         {
             outfit.image = UIImage(named: outfits[3][index])
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "popUp" {
-            let dvc = segue.destination as! PopUpTableViewController
-            let spring = springOutfits
-            let summer = summerOutfits
-            let autumn = autumnOutfits
-            let winter = winterOutfits
-    
-            dvc.spring = spring
-            dvc.summer = summer
-            dvc.autumn = autumn
-            dvc.winter = winter
-            
-            let chosen = self.chosen
-            dvc.chosenBool = chosen
-        }
-    
-    }
-    @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {}
-    }
+   
+}
 
