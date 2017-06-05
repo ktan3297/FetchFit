@@ -67,11 +67,10 @@ class ResultViewController: UIViewController {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove( toParentViewController: self)
-        //self.performSegue(withIdentifier: "popUp", sender: "swipeR")
 
     }
-//   @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
-//    }
+   @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "popUp" {
             let dvc = segue.destination as! PopUpTableViewController
