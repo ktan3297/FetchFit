@@ -269,7 +269,7 @@
                                     <segue destination="AIe-nn-ggN" kind="show" id="WBr-df-Gv8"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjT-gB-LQ3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjT-gB-LQ3">
                                 <rect key="frame" x="32" y="522" width="46" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="heart"/>
@@ -281,23 +281,19 @@
                                 <rect key="frame" x="67" y="359" width="61" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-wc-op5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-wc-op5">
                                 <rect key="frame" x="99" y="522" width="46" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="moustache"/>
+                                <state key="normal" backgroundImage="minion"/>
                                 <connections>
                                     <action selector="tapSticker2:" destination="kUi-ot-qcd" eventType="touchUpInside" id="Yhw-ut-SLd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYj-z9-H9Y">
-                                <rect key="frame" x="145" y="225" width="82" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-mg-iVK">
                                 <rect key="frame" x="223" y="83" width="84" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJi-PK-Vk2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJi-PK-Vk2">
                                 <rect key="frame" x="164" y="522" width="46" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="pink_crown"/>
@@ -306,6 +302,10 @@
                                     <action selector="tapSticker3:" destination="kUi-ot-qcd" eventType="touchUpInside" id="CiY-9W-mel"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYj-z9-H9Y">
+                                <rect key="frame" x="268" y="374" width="39" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -314,6 +314,9 @@
                         <outlet property="camSticker2" destination="jYj-z9-H9Y" id="DwB-ZV-bqk"/>
                         <outlet property="camSticker3" destination="F3E-mg-iVK" id="b7E-cF-b74"/>
                         <outlet property="imageDisplay" destination="C7k-yv-0bg" id="sdd-js-tI1"/>
+                        <outlet property="tap1" destination="pjT-gB-LQ3" id="QVu-5r-3xE"/>
+                        <outlet property="tap2" destination="F1W-wc-op5" id="yMD-pM-N1Z"/>
+                        <outlet property="tap3" destination="sJi-PK-Vk2" id="beZ-Rw-Olc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAQ-1o-jpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -560,7 +563,7 @@
     <resources>
         <image name="ProfileButton" width="240" height="240"/>
         <image name="heart" width="720" height="720"/>
-        <image name="moustache" width="1280" height="640"/>
+        <image name="minion" width="128" height="128"/>
         <image name="pink_crown" width="298" height="297"/>
         <image name="startScreen" width="640" height="640"/>
     </resources>

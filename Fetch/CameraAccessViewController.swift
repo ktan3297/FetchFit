@@ -14,6 +14,9 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     @IBOutlet weak var camSticker1: UIImageView!
     @IBOutlet weak var camSticker2: UIImageView!
     @IBOutlet weak var camSticker3: UIImageView!
+    @IBOutlet weak var tap1: UIButton!
+    @IBOutlet weak var tap2: UIButton!
+    @IBOutlet weak var tap3: UIButton!
     
     var heart1 = 0
     var m = 0
@@ -33,7 +36,7 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     @IBAction func tapSticker2(_ sender: UIButton) {
         m += 1
         if(m == 1){
-            camSticker2.image = #imageLiteral(resourceName: "moustache")
+            camSticker2.image = #imageLiteral(resourceName: "minion")
         }
         else{
             m = 0
@@ -75,14 +78,15 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imageDisplay.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        if(imageDisplay.image != nil){
+            tap1.isEnabled = true
+            tap2.isEnabled = true
+            tap3.isEnabled = true
+        }
+        super.viewDidLoad()
         dismiss(animated: true, completion: nil)
         imageDisplay.contentMode = .scaleToFill
-        if(imageDisplay.image != nil){
-            print("not nil")
-            camSticker1.isHidden = false
-            camSticker2.isHidden = false
-            camSticker3.isHidden = false
-        }
+        
     }
 
     /*
