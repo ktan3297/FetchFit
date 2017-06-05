@@ -271,7 +271,7 @@
                         <outlet property="seasonLabel" destination="Fe0-mh-iYi" id="NkQ-JV-sEJ"/>
                         <outlet property="userName" destination="LX6-9o-bpE" id="UKv-CD-CbX"/>
                         <outlet property="userStyle" destination="v9E-3W-Ulz" id="LeY-Bv-K8T"/>
-                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="unwindToOutfits" unwindAction="unwindToOutfitsWithSegue:" id="wc7-jW-Lv3"/>
+                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="goBack" animates="NO" unwindAction="unwindToOutfitsWithSegue:" id="FzO-Ja-Lbs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNb-zt-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -602,10 +602,10 @@
     </scenes>
     <resources>
         <image name="ProfileButton" width="240" height="240"/>
-        <image name="sandals" width="16" height="16"/>
-        <image name="shorts" width="16" height="16"/>
+        <image name="heart" width="720" height="720"/>
+        <image name="moustache" width="1280" height="640"/>
+        <image name="pink_crown" width="298" height="297"/>
         <image name="startScreen" width="640" height="640"/>
-        <image name="wtf_shirt" width="540" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WBr-df-Gv8"/>
