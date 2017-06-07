@@ -70,7 +70,6 @@ class QuizViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         default:
             return ages[row]
         }
-       
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {

@@ -16,6 +16,7 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     @IBOutlet weak var camSticker3: UIImageView!
     @IBOutlet weak var camSticker4: UIImageView!
     @IBOutlet weak var camSticker5: UIImageView!
+    
     @IBOutlet weak var tap1: UIButton!
     @IBOutlet weak var tap2: UIButton!
     @IBOutlet weak var tap3: UIButton!
@@ -70,7 +71,6 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
             sparkle1 = 0
             camSticker4.image = nil
         }
-    
     }
     
     @IBAction func tapSticker5(_ sender: UIButton) {
@@ -111,6 +111,7 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
             tap2.isEnabled = true
             tap3.isEnabled = true
             tap4.isEnabled = true
+            tap5.isEnabled = true
         }
         super.viewDidLoad()
         dismiss(animated: true, completion: nil)
