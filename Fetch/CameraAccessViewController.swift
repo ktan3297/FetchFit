@@ -14,13 +14,19 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
     @IBOutlet weak var camSticker1: UIImageView!
     @IBOutlet weak var camSticker2: UIImageView!
     @IBOutlet weak var camSticker3: UIImageView!
+    @IBOutlet weak var camSticker4: UIImageView!
+    @IBOutlet weak var camSticker5: UIImageView!
     @IBOutlet weak var tap1: UIButton!
     @IBOutlet weak var tap2: UIButton!
     @IBOutlet weak var tap3: UIButton!
+    @IBOutlet weak var tap4: UIButton!
+    @IBOutlet weak var tap5: UIButton!
     
     var heart1 = 0
     var m = 0
     var crown1 = 0
+    var sparkle1 = 0
+    var star1 = 0
     
     @IBAction func tapSticker(_ sender: UIButton) {
         heart1 += 1
@@ -55,6 +61,28 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
         }
     }
     
+    @IBAction func TapSticker4(_ sender: UIButton) {
+        sparkle1 += 1
+        if(sparkle1 == 1){
+            camSticker4.image = #imageLiteral(resourceName: "sparkle")
+        }
+        else{
+            sparkle1 = 0
+            camSticker4.image = nil
+        }
+    
+    }
+    
+    @IBAction func tapSticker5(_ sender: UIButton) {
+        star1 += 1
+        if(star1 == 1){
+            camSticker5.image = #imageLiteral(resourceName: "star")
+        }
+        else{
+            star1 = 0
+            camSticker5.image = nil
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,6 +110,7 @@ class CameraAccessViewController: UIViewController, UINavigationControllerDelega
             tap1.isEnabled = true
             tap2.isEnabled = true
             tap3.isEnabled = true
+            tap4.isEnabled = true
         }
         super.viewDidLoad()
         dismiss(animated: true, completion: nil)
