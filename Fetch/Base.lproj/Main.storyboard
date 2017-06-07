@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miranda" translatesAutoresizingMaskIntoConstraints="NO" id="l85-FR-gFy">
-                                <rect key="frame" x="15" y="87" width="343" height="492"/>
+                                <rect key="frame" x="14.748936454742875" y="87.952216464850608" width="342.99999999999989" height="492.00000000000011"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -347,6 +347,30 @@
                                     <action selector="tapSticker3:" destination="kUi-ot-qcd" eventType="touchUpInside" id="CiY-9W-mel"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-1Q-JWm">
+                                <rect key="frame" x="223" y="522" width="63" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sparkle"/>
+                                <connections>
+                                    <action selector="TapSticker4:" destination="kUi-ot-qcd" eventType="touchUpInside" id="lKy-Bi-TwK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6W-Tz-jNv">
+                                <rect key="frame" x="249" y="246" width="58" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l93-p4-IbA">
+                                <rect key="frame" x="294" y="519" width="58" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="tapSticker5:" destination="kUi-ot-qcd" eventType="touchUpInside" id="vhF-o1-U5F"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PfY-VZ-Rdk">
+                                <rect key="frame" x="67" y="83" width="240" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -354,10 +378,14 @@
                         <outlet property="camSticker1" destination="mte-4m-md5" id="fRf-zY-Pby"/>
                         <outlet property="camSticker2" destination="jYj-z9-H9Y" id="DwB-ZV-bqk"/>
                         <outlet property="camSticker3" destination="F3E-mg-iVK" id="b7E-cF-b74"/>
+                        <outlet property="camSticker4" destination="R6W-Tz-jNv" id="vg2-Do-sgD"/>
+                        <outlet property="camSticker5" destination="PfY-VZ-Rdk" id="SbJ-lg-PAP"/>
                         <outlet property="imageDisplay" destination="C7k-yv-0bg" id="sdd-js-tI1"/>
                         <outlet property="tap1" destination="pjT-gB-LQ3" id="QVu-5r-3xE"/>
                         <outlet property="tap2" destination="F1W-wc-op5" id="yMD-pM-N1Z"/>
                         <outlet property="tap3" destination="sJi-PK-Vk2" id="beZ-Rw-Olc"/>
+                        <outlet property="tap4" destination="Wb6-1Q-JWm" id="rix-NO-OWL"/>
+                        <outlet property="tap5" destination="l93-p4-IbA" id="qIH-GB-yUV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAQ-1o-jpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -555,11 +583,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQM-Zd-9xG">
-                                <rect key="frame" x="24" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lah-7p-9eQ">
                                 <rect key="frame" x="140" y="617" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -571,7 +594,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fye-pt-ajf">
                                 <rect key="frame" x="273" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Saved"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -6562,6 +6585,8 @@ AAVxSQAFcU4AAAAAAAAEAQAAAAAAAABBAAAAAAAAAAAAAAAAAAVxUA
         <image name="minion" width="128" height="128"/>
         <image name="miranda" width="800" height="1035"/>
         <image name="pink_crown" width="298" height="297"/>
+        <image name="sparkle" width="299" height="258"/>
+        <image name="star" width="607" height="264"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WBr-df-Gv8"/>
