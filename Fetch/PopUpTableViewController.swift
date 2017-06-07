@@ -24,9 +24,7 @@ class PopUpTableViewController: UITableViewController {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var seasonLabel: UILabel!
     @IBOutlet weak var userStyle: UILabel!
-    
     @IBOutlet weak var chosenOutfit: UIImageView!
-    
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +38,6 @@ class PopUpTableViewController: UITableViewController {
         }
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,9 +61,9 @@ class PopUpTableViewController: UITableViewController {
         }
     }
  @IBAction func closePopUp(_ sender: Any) {
+    
     self.view.removeFromSuperview()
     performSegue(withIdentifier: "goBack", sender: self)
-    //chosenBool = false
     }
     /*
     // MARK: - Navigation

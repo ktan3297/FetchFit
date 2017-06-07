@@ -57,7 +57,7 @@ class ResultViewController: UIViewController {
         else
         {
              outfits = winterOutfits
-            outfit.image = UIImage(named: winterOutfits[0][0])
+             outfit.image = UIImage(named: winterOutfits[0][0])
         }
     }
     @IBAction func showPopup(_ sender: AnyObject) {
@@ -67,12 +67,8 @@ class ResultViewController: UIViewController {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove( toParentViewController: self)
-
-    }
-   @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "popUp" {
             let dvc = segue.destination as! PopUpTableViewController
             let spring = springOutfits
             let summer = summerOutfits
@@ -86,10 +82,9 @@ class ResultViewController: UIViewController {
             
             let chosen = self.chosen
             dvc.chosenBool = chosen
-        }
-        
     }
-    
+     @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
+    }
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         index += 1
         if index > 4 {
@@ -118,7 +113,7 @@ class ResultViewController: UIViewController {
     }
     @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
         chosen = true
-        ResultViewController.profile.subInd  = index
+        ResultViewController.profile.subInd = index
         index += 1
         if index > 4 {
             index = 0
