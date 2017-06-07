@@ -64,8 +64,8 @@ class PopUpTableViewController: UITableViewController {
         }
     }
  @IBAction func closePopUp(_ sender: Any) {
-    self.dismiss(animated: true, completion: nil)
-    //performSegue(withIdentifier: "goBack", sender: self)
+    self.view.removeFromSuperview()
+    performSegue(withIdentifier: "goBack", sender: self)
     //chosenBool = false
     }
     /*

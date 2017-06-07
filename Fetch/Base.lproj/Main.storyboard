@@ -56,8 +56,8 @@
                                     <segue destination="sof-DJ-Wvz" kind="show" id="zK1-9j-J4k"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="startScreen" translatesAutoresizingMaskIntoConstraints="NO" id="l85-FR-gFy">
-                                <rect key="frame" x="15.066694388410042" y="148.76028318902058" width="343.00000000000011" height="370.00000000000017"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miranda" translatesAutoresizingMaskIntoConstraints="NO" id="l85-FR-gFy">
+                                <rect key="frame" x="15" y="87" width="343" height="492"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -271,7 +271,7 @@
                         <outlet property="seasonLabel" destination="Fe0-mh-iYi" id="NkQ-JV-sEJ"/>
                         <outlet property="userName" destination="LX6-9o-bpE" id="UKv-CD-CbX"/>
                         <outlet property="userStyle" destination="v9E-3W-Ulz" id="LeY-Bv-K8T"/>
-                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="goBack" animates="NO" unwindAction="unwindToOutfitsWithSegue:" id="FzO-Ja-Lbs"/>
+                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="goBack" unwindAction="unwindToOutfitsWithSegue:" id="qgp-aM-DhY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNb-zt-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -6582,7 +6582,8 @@ AAVxSQAFcU4AAAAAAAAEAQAAAAAAAABBAAAAAAAAAAAAAAAAAAVxUA
 </mutableData>
         </image>
         <image name="heart" width="720" height="720"/>
-        <image name="minion" width="128" height="128"/>
+        <image name="miranda" width="800" height="1035"/>
+        <image name="moustache" width="1280" height="640"/>
         <image name="pink_crown" width="298" height="297"/>
         <image name="sparkle" width="299" height="258"/>
         <image name="star" width="607" height="264"/>
