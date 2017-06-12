@@ -14,12 +14,10 @@ class PopUpTableViewController: UITableViewController {
     @IBOutlet weak var cellTwo: UITableViewCell!
     @IBOutlet weak var cellThree: UITableViewCell!
     @IBOutlet weak var cellFour: UITableViewCell!
-    var spring = [[String]]()
-    var summer = [[String]]()
-    var autumn = [[String]]()
-    var winter = [[String]]()
+
+    var image1 = UIImage()
     var chosenBool = Bool()
-    var chosenArr = [[String]]()
+    
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var seasonLabel: UILabel!
@@ -32,9 +30,9 @@ class PopUpTableViewController: UITableViewController {
         ageLabel.text = QuizViewController.profile.age
         seasonLabel.text = QuizViewController.profile.season
         userStyle.text = QuizViewController.profile.style
-        chooseImage()
+
         if chosenBool == true{
-        chosenOutfit.image = UIImage(named: chosenArr[ResultViewController.profile.arrInd][ResultViewController.profile.subInd])
+        chosenOutfit.image = image1
         }
         // Do any additional setup after loading the view.
     }
@@ -42,28 +40,10 @@ class PopUpTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func chooseImage(){
-        if(QuizViewController.profile.season == "Spring")
-        {
-            chosenArr = spring
-        }
-        else if(QuizViewController.profile.season == "Summer")
-        {
-           chosenArr = summer
-        }
-        else if(QuizViewController.profile.season == "Autumn")
-        {
-           chosenArr = autumn
-        }
-        else
-        {
-            chosenArr = winter
-        }
-    }
+
  @IBAction func closePopUp(_ sender: Any) {
     
-    self.view.removeFromSuperview()
-    performSegue(withIdentifier: "goBack", sender: self)
+    //performSegue(withIdentifier: "unwind", sender: self)
     }
     /*
     // MARK: - Navigation

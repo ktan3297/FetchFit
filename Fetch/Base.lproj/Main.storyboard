@@ -271,7 +271,7 @@
                         <outlet property="seasonLabel" destination="Fe0-mh-iYi" id="NkQ-JV-sEJ"/>
                         <outlet property="userName" destination="LX6-9o-bpE" id="UKv-CD-CbX"/>
                         <outlet property="userStyle" destination="v9E-3W-Ulz" id="LeY-Bv-K8T"/>
-                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="goBack" unwindAction="unwindToOutfitsWithSegue:" id="qgp-aM-DhY"/>
+                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="unwind" unwindAction="unwindToOutfitsWithSegue:" id="L71-LP-wHB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNb-zt-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
