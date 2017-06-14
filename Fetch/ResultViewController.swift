@@ -67,7 +67,18 @@ class ResultViewController: UIViewController {
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove( toParentViewController: self)
     }
-        
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "popUp"){
+            let destination = segue.destination as! PopUpTableViewController
+
+            let pic = image
+                destination.image1 = pic
+            let chosen = self.chosen
+                destination.chosenBool = chosen
+        }
+    }
+    @IBAction func unwindToOutfits(segue:UIStoryboardSegue) {
+    }  
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         index += 1
         if index > 4 {
@@ -119,15 +130,6 @@ class ResultViewController: UIViewController {
             outfit.image = UIImage(named: outfits[3][index])
         }
     }
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let dvc = segue.destination as! PopUpTableViewController
-
-            let pic = image
-                dvc.image1 = pic
-            let chosen = self.chosen
-                dvc.chosenBool = chosen
-    }
-    @IBAction func unwindToOutfits(segue:UIStoryboardSegue) {
-    }
+   
 }
 
