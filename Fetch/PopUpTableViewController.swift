@@ -14,19 +14,15 @@ class PopUpTableViewController: UITableViewController {
     @IBOutlet weak var cellTwo: UITableViewCell!
     @IBOutlet weak var cellThree: UITableViewCell!
     @IBOutlet weak var cellFour: UITableViewCell!
-    var spring = [[String]]()
-    var summer = [[String]]()
-    var autumn = [[String]]()
-    var winter = [[String]]()
+
+    var image1 = UIImage()
     var chosenBool = Bool()
-    var chosenArr = [[String]]()
+    
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var seasonLabel: UILabel!
     @IBOutlet weak var userStyle: UILabel!
-    
     @IBOutlet weak var chosenOutfit: UIImageView!
-    
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,39 +30,21 @@ class PopUpTableViewController: UITableViewController {
         ageLabel.text = QuizViewController.profile.age
         seasonLabel.text = QuizViewController.profile.season
         userStyle.text = QuizViewController.profile.style
-        chooseImage()
+
         if chosenBool == true{
-        chosenOutfit.image = UIImage(named: chosenArr[ResultViewController.profile.arrInd][ResultViewController.profile.subInd])
+        chosenOutfit.image = image1
         }
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func chooseImage(){
-        if(QuizViewController.profile.season == "Spring")
-        {
-            chosenArr = spring
-        }
-        else if(QuizViewController.profile.season == "Summer")
-        {
-           chosenArr = summer
-        }
-        else if(QuizViewController.profile.season == "Autumn")
-        {
-           chosenArr = autumn
-        }
-        else
-        {
-            chosenArr = winter
-        }
-    }
+
  @IBAction func closePopUp(_ sender: Any) {
+    
     self.view.removeFromSuperview()
-    performSegue(withIdentifier: "goBack", sender: self)
-    //chosenBool = false
+    performSegue(withIdentifier: "unwind", sender: self)
     }
     /*
     // MARK: - Navigation

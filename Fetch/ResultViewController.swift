@@ -14,7 +14,6 @@ class ResultViewController: UIViewController {
   
     @IBOutlet weak var outfit: UIImageView!
     var outfits = [[String]]()
-    var savedOutfit = UIImage()
     var chosen = Bool()
     static var profile: Profile! = Profile(name: "", age: "", season: "", style: "",arrInd: 0, subInd: 0)
     var springOutfits = [["springSophisticated1", "springSophisticated2", "springSophisticated3", "springSophisticated4", "springSophisticated5"],["springElegant1", "springElegant2", "springElegant3", "springElegant4", "springElegant5"],["springCasual1", "springCasual2", "springCasual3", "springCasual4", "springCasual5"],["springAthletic1", "springAthletic2", "springAthletic3", "springAthletic4", "springAthletic5"]]
@@ -25,7 +24,7 @@ class ResultViewController: UIViewController {
     
     var winterOutfits = [["winterSophisticated1", "winterSophisticated2", "winterSophisticated3", "winterSophisticated4", "winterSophisticated5"],["winterElegant1", "winterElegant2", "winterElegant3", "winterElegant4", "winterElegant5"],["winterCasual1", "winterCasual2", "winterCasual3", "winterCasual4", "winterCasual5"],["winterAthletic1", "winterAthletic2", "winterAthletic3", "winterAthletic4", "winterAthletic5"]]
     var index = 0
-    
+    var image = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
         chooseOutfitArray();
@@ -57,7 +56,7 @@ class ResultViewController: UIViewController {
         else
         {
              outfits = winterOutfits
-            outfit.image = UIImage(named: winterOutfits[0][0])
+             outfit.image = UIImage(named: winterOutfits[0][0])
         }
     }
     @IBAction func showPopup(_ sender: AnyObject) {
@@ -67,29 +66,8 @@ class ResultViewController: UIViewController {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove( toParentViewController: self)
-
     }
-   @IBAction func unwindToOutfits(segue: UIStoryboardSegue) {
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "popUp" {
-            let dvc = segue.destination as! PopUpTableViewController
-            let spring = springOutfits
-            let summer = summerOutfits
-            let autumn = autumnOutfits
-            let winter = winterOutfits
-            
-            dvc.spring = spring
-            dvc.summer = summer
-            dvc.autumn = autumn
-            dvc.winter = winter
-            
-            let chosen = self.chosen
-            dvc.chosenBool = chosen
-        }
         
-    }
-    
     @IBAction func swipeL(_ sender: UISwipeGestureRecognizer) {
         index += 1
         if index > 4 {
@@ -118,7 +96,8 @@ class ResultViewController: UIViewController {
     }
     @IBAction func swipeR(_ sender: UISwipeGestureRecognizer) {
         chosen = true
-        ResultViewController.profile.subInd  = index
+        ResultViewController.profile.subInd = index
+        image = outfit.image!
         index += 1
         if index > 4 {
             index = 0
@@ -140,6 +119,15 @@ class ResultViewController: UIViewController {
             outfit.image = UIImage(named: outfits[3][index])
         }
     }
-   
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let dvc = segue.destination as! PopUpTableViewController
+
+            let pic = image
+                dvc.image1 = pic
+            let chosen = self.chosen
+                dvc.chosenBool = chosen
+    }
+    @IBAction func unwindToOutfits(segue:UIStoryboardSegue) {
+    }
 }
 
