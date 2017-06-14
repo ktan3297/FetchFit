@@ -707,10 +707,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lah-7p-9eQ">
-                                <rect key="frame" x="140" y="617" width="68" height="30"/>
+                                <rect key="frame" x="140" y="617" width="54" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="N3c-ny-HCD"/>
-                                    <constraint firstAttribute="height" constant="30" id="tS7-H4-mS5"/>
+                                    <constraint firstAttribute="width" constant="54" id="dfc-9c-wyy"/>
+                                    <constraint firstAttribute="height" constant="30" id="jJw-Zw-e4C"/>
                                 </constraints>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -733,17 +733,17 @@
                             <constraint firstItem="n1t-wH-8JN" firstAttribute="leading" secondItem="RTe-W5-cq6" secondAttribute="trailing" constant="8" id="2M1-Vq-39S"/>
                             <constraint firstItem="rkh-jf-9ac" firstAttribute="top" secondItem="i6d-oP-x9Y" secondAttribute="bottom" constant="31" id="2ZX-sX-gzy"/>
                             <constraint firstItem="RTe-W5-cq6" firstAttribute="top" secondItem="n1t-wH-8JN" secondAttribute="top" id="6TE-ip-Go7"/>
-                            <constraint firstItem="APM-AW-T5q" firstAttribute="top" secondItem="fye-pt-ajf" secondAttribute="bottom" constant="20" id="BCw-hd-VlW"/>
+                            <constraint firstItem="fye-pt-ajf" firstAttribute="baseline" secondItem="lah-7p-9eQ" secondAttribute="baseline" id="APe-ob-hrw"/>
+                            <constraint firstItem="fye-pt-ajf" firstAttribute="leading" secondItem="lah-7p-9eQ" secondAttribute="trailing" constant="79" id="Aav-Mu-UO2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fye-pt-ajf" secondAttribute="trailing" constant="40" id="RBE-Dv-7rX"/>
                             <constraint firstItem="rkh-jf-9ac" firstAttribute="centerX" secondItem="ENM-26-ziE" secondAttribute="centerX" id="VoW-aZ-iv6"/>
                             <constraint firstItem="n1t-wH-8JN" firstAttribute="top" secondItem="yE4-qw-zln" secondAttribute="bottom" id="VzJ-zA-U3o"/>
                             <constraint firstItem="RTe-W5-cq6" firstAttribute="leading" secondItem="ENM-26-ziE" secondAttribute="leadingMargin" id="Yom-gz-tLV"/>
-                            <constraint firstItem="lah-7p-9eQ" firstAttribute="leading" secondItem="ENM-26-ziE" secondAttribute="leadingMargin" constant="124" id="b7Y-eq-bCe"/>
                             <constraint firstItem="i6d-oP-x9Y" firstAttribute="leading" secondItem="RTe-W5-cq6" secondAttribute="trailing" constant="30" id="cXc-L8-Kuf"/>
                             <constraint firstItem="i6d-oP-x9Y" firstAttribute="top" secondItem="yE4-qw-zln" secondAttribute="bottom" constant="38" id="ecc-rN-QoK"/>
+                            <constraint firstAttribute="bottom" secondItem="fye-pt-ajf" secondAttribute="bottom" constant="20" symbolic="YES" id="gGw-tS-pHa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="i6d-oP-x9Y" secondAttribute="trailing" constant="98" id="gW0-ep-a5P"/>
                             <constraint firstItem="RTe-W5-cq6" firstAttribute="top" secondItem="n1t-wH-8JN" secondAttribute="bottom" constant="-39" id="icD-oh-LwW"/>
-                            <constraint firstItem="APM-AW-T5q" firstAttribute="top" secondItem="lah-7p-9eQ" secondAttribute="bottom" constant="20" id="nMz-eo-3w6"/>
                             <constraint firstItem="n1t-wH-8JN" firstAttribute="leading" secondItem="ENM-26-ziE" secondAttribute="leadingMargin" constant="71" id="reC-zx-jwg"/>
                             <constraint firstItem="rkh-jf-9ac" firstAttribute="centerY" secondItem="ENM-26-ziE" secondAttribute="centerY" id="tNn-Lt-MzT"/>
                         </constraints>
