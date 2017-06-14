@@ -354,7 +354,7 @@
                         <outlet property="seasonLabel" destination="Fe0-mh-iYi" id="NkQ-JV-sEJ"/>
                         <outlet property="userName" destination="LX6-9o-bpE" id="UKv-CD-CbX"/>
                         <outlet property="userStyle" destination="v9E-3W-Ulz" id="LeY-Bv-K8T"/>
-                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="unwind" unwindAction="unwindToOutfitsWithSegue:" id="L71-LP-wHB"/>
+                        <segue destination="MwV-2V-AfK" kind="unwind" identifier="goBack" unwindAction="unwindToOutfitsWithSegue:" id="L71-LP-wHB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNb-zt-0iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -714,7 +714,7 @@
                                 </constraints>
                                 <state key="normal" title="Camera"/>
                                 <connections>
-                                    <segue destination="kUi-ot-qcd" kind="show" id="aaD-mi-GXp"/>
+                                    <segue destination="kUi-ot-qcd" kind="show" identifier="" id="aaD-mi-GXp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fye-pt-ajf">
@@ -6737,6 +6737,6 @@ AAVxSQAFcU4AAAAAAAAEAQAAAAAAAABBAAAAAAAAAAAAAAAAAAVxUA
         <image name="star" width="607" height="264"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="irH-jC-uGZ"/>
+        <segue reference="WBr-df-Gv8"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,7 +44,7 @@ class PopUpTableViewController: UITableViewController {
  @IBAction func closePopUp(_ sender: Any) {
     
     self.view.removeFromSuperview()
-    performSegue(withIdentifier: "unwind", sender: self)
+    performSegue(withIdentifier: "goBack", sender: self)
     }
     /*
     // MARK: - Navigation
