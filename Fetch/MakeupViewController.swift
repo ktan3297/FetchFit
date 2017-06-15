@@ -33,7 +33,6 @@ class MakeupViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         chooseMakeupType()
- //       super.reloadInputViews()
         // Do any additional setup after loading the view.
     }
 
