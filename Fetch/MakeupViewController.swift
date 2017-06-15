@@ -32,8 +32,8 @@ class MakeupViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        chooseMakeupType()
         // Do any additional setup after loading the view.
+        chooseMakeupType()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +42,7 @@ class MakeupViewController: UIViewController{
     }
     func chooseMakeupType()
     {
-        if(QuizViewController.profile.style == "athletic")
+        if(QuizViewController.profile.style == "Athletic")
         {
             face.text = "None or Mineral Makeup"
             concealerLabel.text = "Waterproof Concealer"
@@ -63,7 +63,7 @@ class MakeupViewController: UIViewController{
             button5url = "http://www.maccosmetics.com/product/13840/1573/Products/Makeup/Eyes/Shadow/Pro-Longwear-Paint-Pot#/shade/Rubenesque"
             
         }
-        if(QuizViewController.profile.style == "casual")
+        else if(QuizViewController.profile.style == "Casual")
         {
             face.text = "BB Cream"
             concealerLabel.text = "Light Coverage Concealer"
@@ -83,7 +83,7 @@ class MakeupViewController: UIViewController{
             button5.setTitle("NARS Nude Lipstick", for:[])
             button5url = "http://shop.nordstrom.com/s/nars-audacious-lipstick/3849706?cm_mmc=Linkshare-_-partner-_-10-_-1&siteId=.2nGiS3mv0Y-QulH1Ij6CSzXF7ddQfsbmw"
         }
-        if(QuizViewController.profile.style == "Elegant")
+        else if(QuizViewController.profile.style == "Elegant")
         {
             face.text = "Light Coverage Foundation"
             concealerLabel.text = "Light Coverage Concealer"
@@ -103,7 +103,7 @@ class MakeupViewController: UIViewController{
             button5.setTitle("Charlotte Tilbury Lipstick", for:[])
             button5url = "http://shop.nordstrom.com/s/charlotte-tilbury-k-i-s-s-i-n-g-lipstick/3849027?origin=category-personalizedsort"
         }
-        if(QuizViewController.profile.style == "Sophisticated")
+        else if(QuizViewController.profile.style == "Sophisticated")
         {
             face.text = "Medium Coverage Foundation"
             concealerLabel.text = "Medium Coverage Concealer"
